@@ -1,0 +1,15 @@
+    <!--
+        Copyright (c) 2021 Naxii
+        This code is released under the MIT License, see LICENSE, see LICENSE.
+        This website content is released under the CC BY 4.0 License, see LICENSE.
+    -->
+{%- extends "layout.html" %}
+{%- block content %}
+<h1>ドメイン正引き・逆引きツール (nslookup)</h1>
+<p>当サーバーから対象サーバーアドレスへnslookupを行います。</p>
+<p>※当サーバーはCloudflareの「1.1.1.1」DNSリゾルバに接続しています。</p>
+<p>※サーバーローケーションは「日本 関東」です。</p>
+<hr width=auto>
+<button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/forward'">正引きツール</button>
+<button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/reverse'">逆引きツール</button>
+{%- endblock %}

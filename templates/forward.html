@@ -1,0 +1,18 @@
+{%- extends "layout.html" %}
+{%- block content %}
+<h1>ドメイン正引き (nslookup)</h1>
+<p>当サーバーから対象ドメインへnslookupを行います。</p>
+<p>※IPv6には対応していません。IPv4アドレスのみサポートしています。</p>
+<p>※ドメイン名を入力するとそのまま返ってきます。</p>
+<p>※検索を押しても「結果なし」となる場合はnslookupに何らかの原因で失敗しています。</p>
+<hr width=auto>
+<form action="/forward" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="formGroupExampleInput">ドメイン正引き</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="例: 93.184.216.34 " name="ipadd">
+    </div>
+    <button type="submit" class="btn btn-primary">検索</button>
+</form>
+<hr width=auto>
+<h1>結果: {{result}}</h1>
+{%- endblock %}

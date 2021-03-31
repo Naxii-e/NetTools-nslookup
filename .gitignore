@@ -1,0 +1,6 @@
+#secretはIPアドレスとドメインのブラックリストを`blacklist`という変数で保存しています。
+secret.py
+
+#others
+.vscode/
+__pycache__/
