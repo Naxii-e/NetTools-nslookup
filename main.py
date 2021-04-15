@@ -5,7 +5,8 @@
 
 from flask import Flask, jsonify, render_template, request
 import socket, secret
-#secretはIPアドレスとドメインのブラックリストを`blacklist`という変数で保存しています。
+#secretはIPアドレスとドメインのブラックリストを`blacklist`というリスト変数で保存しています。
+#secret.pyとその中のblacklist変数がないと動かないよ！
 
 app = Flask(__name__)
 
