@@ -1,6 +1,4 @@
 # NetTools-nslookup
-デモはこちらからどうぞ。
-https://i.naxii.net/nettools
 
 ## About
 The front-end is developed using Bootstrap, and the back-end is developed using Python3 with Flask and jinja2.
