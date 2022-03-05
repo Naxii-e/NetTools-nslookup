@@ -25,6 +25,9 @@ print(result) #203.0.113.0
 `main.py`では、POSTされたドメイン名(FQDN)又はIPv4アドレスを正引き・逆引きして返すシンプルな構造です。
 なお、IPv6には対応していません。
 
+## ! Attention !
+セキュリティ上問題のあるIPアドレスやホスト(`localhost`,`127.0.0.1`,デフォルトゲートウェイ,ISPや接続先プロキシ・VPNによって取得結果が変わる接続先)などは必ず `secret-example.py` の `blacklist = []` 変数へ記述してください。
+ 
 ## Libraries
 - Flask
 - jinja2
